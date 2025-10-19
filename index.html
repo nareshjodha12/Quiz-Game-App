@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#071122">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Quiz App using JavaScript</title>
+</head>
+<body>
+    <div class="alert">Alert</div>
+    <div class="btn startBtn">Start</div>
+    <main class="container" role="main">
+        
+                <div class="toolbar">
+                    <h1>Let's play a Quiz Game</h1>
+                    <div class="toolbarRight">
+                        <div class="timer" aria-hidden="true"></div>
+                        <div class="themeControls">
+                            <!-- Theme toggle shows an emoji (sun/moon) and a visually-hidden label for screen readers -->
+                            <button class="btn themeToggle" aria-pressed="false" title="Switch to Light mode">
+                                <span class="themeIcon" aria-hidden="true">🌙</span>
+                                <span class="themeLabel sr-only">Dark</span>
+                            </button>
+                            <!-- removed theme palette and difficulty selects per user request -->
+                        </div>
+                    </div>
+                </div>
+        <div class="progressWrap" aria-hidden="false">
+            <div class="progressLabel"><span class="completed">0</span>/<span class="total">0</span> completed</div>
+            <div class="progressBar" aria-hidden="true">
+                <div class="progressFill" style="width:0%"></div>
+            </div>
+        </div>
+        <div class="question"></div>
+    <div class="choices" role="radiogroup" aria-label="Answer choices"></div>
+    <button class="btn nextBtn">Next</button>
+    <div class="scoreCard"></div>
+        <div class="resultsDetail hidden" aria-live="polite"></div>
+        <div class="badges"></div>
+        <div class="leaderboard hidden">
+            <h3>Local Leaderboard</h3>
+            <ol class="leaderList"></ol>
+            <button class="btn clearLeaderboard">Clear Leaderboard</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
