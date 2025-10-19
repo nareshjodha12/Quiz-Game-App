@@ -1,0 +1,66 @@
+# Node (if you add node tooling later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Logs
+logs/
+*.log
+
+# Temporary
+tmp/
+temp/
+.cache/
+
+# Mac image thumbnails
+._*
+
+# Python cache if any
+__pycache__/
+*.py[cod]
+
+# build output
+dist/
+build/
+
+# local env files
+.env
+
+# Visual Studio Code workspace storage
+.history/
+
+# Coverage
+coverage/
+
+# System files
+ehthumbs.db
+Icon?
+
+# JetBrains
+*.iml
+.idea/
+
+# Lock files (optional)
+npm-debug.log*
+
+# Other
+*.swp
+*.swo
+
+# Keep README, index.html, script.js, style.css tracked
+
